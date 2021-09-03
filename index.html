@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>SmartHome</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <header>
+        <!-- LOGO -->
+        <div class="logo">
+            <img src="./img/Logo.png" alt="">
+        </div>
+        <!-- MENU -->
+        <nav class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Productos</li>
+                <li>Contacto</li>
+                <li id="myBtn">Agregar producto</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- IMAGEN SECCION HOGAR -->
+    <div class="home-section">
+        <img src="./img/Home.jpeg" alt="">
+        <div>
+            <h3>Hogar</h3>
+            <p>Descubre más productos</p>
+        </div>
+    </div>
+    <!-- PRODUCTOS HOGAR -->
+    <section class="container-productos" id="container-products">
+       
+        
+    </section>
+     <!-- IMAGEN SECCION PERSONAL -->
+     <div class="home-section">
+        <img src="./img/smartHouse.jpeg" alt="">
+        <div>
+            <h3>Personal</h3>
+            <p>Descubre más productos</p>
+        </div>
+    </div>
+
+     <!-- PRODUCTOS PERSONAL-->
+     <section class="container-productos">
+        <div class="producto">
+            <img src="./img/smartTV.jpeg" alt="">
+            <h6>Personal</h6>
+            <h1>SmartTv</h1>
+            <h2>$499.090</h2>
+        </div>
+        <div class="producto">
+            <img src="./img/enchufeInteligente.webp" alt="">
+            <h6>Personal</h6>
+            <h1>Enchufe inteligente</h1>
+            <h2>$13.990</h2>
+        </div>
+        <div class="producto">
+            <img src="./img/alexaDot.jpeg" alt="">
+            <h6>Personal</h6>
+            <h1>Alexa dot</h1>
+            <h2>$50.990</h2>
+        </div>
+        <div class="producto">
+            <img src="./img/asistenteGoogle.jpeg" alt="">
+            <h6>Personal</h6>
+            <h1>Asistente Google</h1>
+            <h2>$199.990</h2>
+        </div>
+        <div class="producto">
+            <img src="./img/asistenteGoogleMini.jpeg" alt="">
+            <h6>Personal</h6>
+            <h1>Google home mini</h1>
+            <h2>$99.990</h2>
+        </div>
+        <div class="producto">
+            <img src="./img/BarraSonido.jpeg" alt="">
+            <h6>Personal</h6>
+            <h1>Barra de sonido</h1>
+            <h2>$189.990</h2>
+        </div>
+        <div class="producto">
+            <img src="./img/iphone.jpeg" alt="">
+            <h6>Personal</h6>
+            <h1>IPhone 12</h1>
+            <h2>$1.000.900</h2>
+        </div>
+        <div class="producto">
+            <img src="./img/samsung.jpeg" alt="">
+            <h6>Personal</h6>
+            <h1>Samsung Galaxy S20</h1>
+            <h2>$890.990</h2>
+        </div>
+
+        <!-- MODAL -->
+        <div id="myModal" class="modal">           
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="formulario">
+                    <form action="">
+                        <label for="">Nombre del producto</label>
+                        <input type="text" id="pName" placeholder="Ingrese el nombre del producto">
+
+                        <label for="">Precio</label>
+                        <input type="number" id="pPrice" placeholder="Ingrese el precio">
+
+                        <label for="">Categoría del producto</label>
+                        <select name="" id="sproduct">
+                            <option value="Hogar">Hogar</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Seguridad">Seguridad</option>
+                        </select>
+
+                        <input type="file" id="pDocument">
+
+                        <button type="button" class="btnProduct" onclick="addProduct()">Agregar Producto</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+ <script src="./JS/script.js"></script>
+<script src="./JS/modal.js"></script>
+</body>
+</html>
